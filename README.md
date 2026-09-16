@@ -32,7 +32,7 @@ canonical source of truth.
 
 ## Status
 
-Session 1 & Session 2 complete. Ready for Session 3 (Embeddings & vector similarity).
+Session 1, Session 2, and Session 3 complete. Ready for Session 4 (Prompt engineering & versioning).
 
 ## Curriculum
 
@@ -40,7 +40,7 @@ Session 1 & Session 2 complete. Ready for Session 3 (Embeddings & vector similar
 |---|-------|------|--------|--------|
 | 1 | Intro to Generative AI | Define problem/users/inputs/outputs/AI boundary; draw rules→retrieval→judgment→dashboard flow | 1-page architecture doc + diagram | Completed |
 | 2 | Tokenisation fundamentals | Tokenize 5-10 sample transcripts; compare token cost of whole-transcript vs. just relevant turns for a rule like "AI disclosure" | Notebook + observations | Completed |
-| 3 | Embeddings & vector similarity | Embed transcript turns; for "no pressure after refusal," verify turns after a customer's "no" retrieve as most relevant | Notebook + similarity results | Not started |
+| 3 | Embeddings & vector similarity | Embed transcript turns; for "no pressure after refusal," verify turns after a customer's "no" retrieve as most relevant | Notebook + similarity results | Completed |
 | 4 | Prompt engineering & versioning | Write prompt v1/v2/v3 (rule + retrieved turns → yes/no + quote); compare false pos/neg across 5 transcripts | Prompt versions + comparison | Not started |
 | 5 | RAG architecture | Minimum viable slice: 1 hardcoded rule, 5 sample transcripts, chunk-by-turn, embed, retrieve top-k, manually verify | Working mini-RAG | Not started |
 | 6 | LangChain | Rebuild Session 5 with LangChain loaders/splitters/retriever/prompt/output parser | LangChain RAG implementation | Not started |

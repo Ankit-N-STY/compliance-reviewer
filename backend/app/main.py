@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.routers import tokenization, calls
+from backend.app.routers import tokenization, calls, embeddings
 
 app = FastAPI(
     title="Automated Compliance Reviewer API",
     description="Backend API for auditing VoiceBot calls against compliance rules.",
-    version="0.2.0"
+    version="0.3.0"
 )
 
 # Enable CORS for React frontend
@@ -19,6 +19,7 @@ app.add_middleware(
 
 app.include_router(tokenization.router)
 app.include_router(calls.router)
+app.include_router(embeddings.router)
 
 
 @app.get("/")
