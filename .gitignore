@@ -1,0 +1,22 @@
+# Secrets & local-only config
+.env
+*.env
+
+# Data pulled from or derived from the dev DB - never committed
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+frontend/build/
+frontend/dist/
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
